@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: onboarding-ti
+  title: Onboarding de TI
+  description: Guia de referência para a chegada de pessoas a equipes de tecnologia
+  tags: [onboarding]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-onboarding
+    backstage.io/techdocs-ref: dir:.
+    portal.local/category: Onboarding
+    portal.local/topics: Jornada, Acessos, Práticas, Referência
+spec:
+  type: onboarding
+  lifecycle: production
+  owner: platform-team

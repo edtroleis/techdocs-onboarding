@@ -1,0 +1,31 @@
+site_name: Onboarding de TI
+site_description: Guia de referência para a chegada de pessoas a equipes de tecnologia
+repo_url: https://github.com/edtroleis/techdocs-onboarding
+edit_uri: edit/main/docs/
+nav:
+  - Início: index.md
+  - Jornada de onboarding:
+      - Primeiros dias: jornada/primeiros-dias.md
+      - Primeira semana: jornada/primeira-semana.md
+      - Primeiro mês: jornada/primeiro-mes.md
+  - Acessos e ambiente:
+      - Contas e acessos: acessos/contas-e-acessos.md
+      - Estação de trabalho: acessos/estacao-de-trabalho.md
+      - Ferramentas: acessos/ferramentas.md
+  - Práticas e processos:
+      - Fluxo de trabalho: praticas/fluxo-de-trabalho.md
+      - Segurança da informação: praticas/seguranca-da-informacao.md
+      - Comunicação: praticas/comunicacao.md
+  - Referência:
+      - Contatos e canais: referencia/contatos-e-canais.md
+      - Glossário: referencia/glossario.md
+      - FAQ: referencia/faq.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true
